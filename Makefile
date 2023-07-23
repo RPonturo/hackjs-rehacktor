@@ -17,5 +17,5 @@ dev: ## serve for development
 
 install: ## performs initial setup
 	@echo "Installing libraries"
-	@cd backend && composer install && cp .env.example .env && php artisan key:generate
+	@cd backend && composer install && copy .env.example .env && php artisan key:generate
 	@cd frontend && npm install
